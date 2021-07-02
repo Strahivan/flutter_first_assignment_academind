@@ -17,12 +17,18 @@ class ProjectAssignment extends StatefulWidget {
 
 // Your actual main widget
 class ProjectAssignmentState extends State<ProjectAssignment> {
-  var written;
+  var written = "Button wasn\'t clicked yet";
 
 // Method that resets the state and changes the text value when button is clicked
   void clickedButton() {
     setState(() {
       written = 'Button was clicked!';
+    });
+  }
+
+  void resetButton(){
+    setState(() {
+      written = "Button wasn\'t clicked yet";
     });
   }
 
@@ -36,7 +42,8 @@ class ProjectAssignmentState extends State<ProjectAssignment> {
         body: Column(
           children: [
             TEXTCLASS(written),
-            TEXTCONTROLLCLASS(() => clickedButton),
+            TEXTCONTROLLCLASS(clickedButton, "Click Me"),
+            TEXTCONTROLLCLASS(resetButton, "Reset State"),
           ],
         ),
       ),
