@@ -15,6 +15,7 @@ class TEXTCONTROLLCLASS extends StatelessWidget {
   // Needed build function for this widget
   Widget build(BuildContext context) {
     return Container(
+      width: double.infinity,
         child: RaisedButton(
             onPressed: TextMethod,
             child: Text(ButtonText)
