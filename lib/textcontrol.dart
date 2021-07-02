@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
+// This class is a simple Button-Widget
 class TEXTCONTROLLCLASS extends StatelessWidget {
 
-  // Store a function in here
+  // Store the function in here from main
   final VoidCallback TextMethod;
 
   // Constructor
