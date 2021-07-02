@@ -26,12 +26,15 @@ class ProjectAssignmentState extends State<ProjectAssignment> {
     });
   }
 
+// Method that resets the state back to the initial default value
   void resetButton(){
     setState(() {
       written = "Button wasn\'t clicked yet";
     });
   }
 
+
+// Central build method
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
